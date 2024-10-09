@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №1</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/lab1.css">
+</head>
+<body>
+
+    <header>
+        <h1>Лабораторне заняття №1. Основи HTML</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Головна</a></li>
+            <li><a href="../labs.html">Список лабораторних</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="form-container">
+            <h2>Реєстрація</h2>
+            <form action="https://webhook.site" method="POST">
+                <label for="first-name">Ім'я:</label>
+                <input type="text" id="first-name" name="first-name" required><br><br>
+
+                <label for="last-name">Прізвище:</label>
+                <input type="text" id="last-name" name="last-name" required><br><br>
+
+                <label for="email">Електронна пошта:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" required><br><br>
+
+                <label for="confirm-password">Підтвердження пароля:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required><br><br>
+
+                <label for="birthdate">Дата народження:</label>
+                <input type="date" id="birthdate" name="birthdate"><br><br>
+
+                <label for="country">Країна:</label>
+                <select id="country" name="country">
+                    <option value="UA">Україна</option>
+                    <option value="PL">Польща</option>
+                    <option value="US">США</option>
+                    <option value="CA">Канада</option>
+                </select><br><br>
+
+                <input type="submit" value="Відправити">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Контакти: email@example.com</p>
+        <p>Соціальні мережі: <a href="https://github.com/yourusername">GitHub</a></p>
+        <p>Рік навчання: 2024</p>
+    </footer>
+
+</body>
+</html>
