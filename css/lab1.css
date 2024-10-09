@@ -16,7 +16,7 @@
 .form-container h2 {
     margin-bottom: 20px;
     font-size: 2em;
-    color: #4CAF50;
+    color: #5e2750;
 }
 
 form {
@@ -27,7 +27,7 @@ label {
     display: block;
     margin-bottom: 10px;
     font-weight: bold;
-    color: #4CAF50;
+    color: #5e2750;
     text-align: left;
 }
 
@@ -51,12 +51,12 @@ input[type="email"]:focus,
 input[type="password"]:focus,
 input[type="date"]:focus,
 select:focus {
-    border-color: #4CAF50;
+    border-color: #5e2750;
     outline: none;
 }
 
 input[type="submit"] {
-    background-color: #4CAF50;
+    background-color: #5e2750;
     color: white;
     padding: 15px 20px;
     border: none;
@@ -68,5 +68,5 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #5e2750;
 }
