@@ -77,3 +77,17 @@ p::first-letter {
 a::after {
     content: "↗";
 }
+
+/* Модифікація для чекбоксів */
+
+/* Зміна кольору на червоний для чекбоксів, коли вони обрані */
+input[type="checkbox"]:checked {
+    accent-color: red;
+}
+
+/* Стилі для самих чекбоксів */
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}

@@ -5,42 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Лабораторна робота №2</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/lab2.css">
+    <link rel="stylesheet" href="../css/lab2.css"> <!-- Підключення стилів для lab2 -->
 </head>
 <body>
 
     <header>
         <h1>Лабораторне заняття №2. Основи HTML</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Головна</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="../index.html">Головна</a></li>
-        </ul>
-    </nav>
-
     <main>
-        
-        
-        <div>
-            <p>Цей абзац містить текст, перший символ якого буде більшим.</p>
-            <input type="text" placeholder="Введіть текст тут" />
-            <input type="text" disabled placeholder="Це поле вимкнено" />
+        <!-- Вміст лабораторної роботи -->
+        <div class="container">
+            <h1>CSS Selectors Challenge</h1>
+            <p>Це абзац тексту.</p>
+            <ul>
+                <li>Перший пункт списку</li>
+                <li class="special">Другий пункт списку</li>
+                <li>Третій пункт списку</li>
+            </ul>
+            <div class="box">
+                <p>Цей абзац знаходиться в коробці.</p>
+            </div>
+            <form>
+                <label for="input1">Поле введення 1:</label>
+                <input type="text" id="input1">
+                <br>
+                <label for="input2">Поле введення 2 (disabled):</label>
+                <input type="text" id="input2" disabled>
+                <br>
+                <label for="email1">Email:</label>
+                <input type="email" id="email1">
+                <br>
+                <label for="input3">Поле введення 3:</label>
+                <input type="text" id="input3">
+                <br>
+                <label for="check1">Чекбокс 1 (фіолетовий при виборі):</label>
+                <input type="checkbox" id="check1">
+                <br>
+                <label for="check2">Чекбокс 2 (червоний при виборі):</label>
+                <input type="checkbox" id="check2">
+            </form>
         </div>
-
-        <ul>
-            <li>Пункт списку 1</li>
-            <li>Пункт списку 2</li>
-            <li>Пункт списку 3</li>
-        </ul>
         
-        <p>Ось ще один абзац для тестування.</p>
+        <section>
+            <h2>Додатковий розділ</h2>
+            <p>Це ще один абзац тексту в іншому розділі.</p>
+            <ul>
+                <li>Перший пункт списку</li>
+                <li>Другий пункт списку</li>
+            </ul>
+        </section>
     </main>
 
     <footer>
         <p>Контакти: aleksandrlitvinov2003@gmail.com</p>
         <p>Соціальні мережі: <a href="https://github.com/AleksandrLitvinov03">GitHub</a></p>
         <p>Рік навчання: 2024</p>
+        <a href="#">Home</a>
     </footer>
 
 </body>
