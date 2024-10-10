@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Homepage</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/lab3.css">
+    <style>
+        /* Add this in your CSS file or inside the <style> block */
+        .avatar-img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%; /* Makes the image circular */
+            object-fit: cover;  /* Ensures the image fits without distortion */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fas fa-bars"></i>
+            <img src="../img/youtube-logo.png" alt="YouTube Logo">
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <div class="user-actions">
+            <i class="fas fa-video"></i>
+            <i class="fas fa-th"></i>
+            <i class="fas fa-bell"></i>
+            <div class="user-profile-pic">
+                <img src="../img/usprof.jpg" alt="User Profile">
+            </div>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <aside class="sidebar">
+            <ul>
+                <li><i class="fas fa-home"></i> Home</li>
+                <li><i class="fas fa-fire"></i> Trending</li>
+                <li><i class="fas fa-folder"></i> Subscriptions</li>
+                <li><i class="fas fa-play-circle"></i> Library</li>
+                <li><i class="fas fa-history"></i> History</li>
+                <li><i class="fas fa-clock"></i> Watch later</li>
+                <li><i class="fas fa-thumbs-up"></i> Liked videos</li>
+            </ul>
+        </aside>
+
+        <main class="video-grid">
+            <!-- Video item 1 -->
+            <div class="video-item">
+                <div class="video-thumbnail" style="background-image: url('../img/pic1.png')">
+                    <span class="video-duration">10:15</span>
+                </div>
+                <div class="video-info">
+                    <div class="channel-avatar">
+                        <img src="../img/chpic1.png" alt="Channel Avatar" class="avatar-img">
+                    </div>
+                    <div class="video-details">
+                        <div class="video-title">10 Amazing Facts About the Universe You Didn't Know</div>
+                        <div class="channel-name">Space Explorers</div>
+                        <div class="video-stats">1.2M views • 2 days ago</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video item 2 -->
+            <div class="video-item">
+                <div class="video-thumbnail" style="background-image: url('../img/pic2.png')">
+                    <span class="video-duration">8:45</span>
+                </div>
+                <div class="video-info">
+                    <div class="channel-avatar">
+                        <img src="../img/chpic2.png" alt="Channel Avatar" class="avatar-img">
+                    </div>
+                    <div class="video-details">
+                        <div class="video-title">How to Cook the Perfect Steak</div>
+                        <div class="channel-name">Foodie Chef</div>
+                        <div class="video-stats">980K views • 3 days ago</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video item 3 -->
+            <div class="video-item">
+                <div class="video-thumbnail" style="background-image: url('../img/pic3.png')">
+                    <span class="video-duration">5:12</span>
+                </div>
+                <div class="video-info">
+                    <div class="channel-avatar">
+                        <img src="../img/chpic3.png" alt="Channel Avatar" class="avatar-img">
+                    </div>
+                    <div class="video-details">
+                        <div class="video-title">Top 10 Hidden Features in iOS 16</div>
+                        <div class="channel-name">Tech World</div>
+                        <div class="video-stats">500K views • 1 week ago</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video item 4 -->
+            <div class="video-item">
+                <div class="video-thumbnail" style="background-image: url('../img/pic4.png')">
+                    <span class="video-duration">12:30</span>
+                </div>
+                <div class="video-info">
+                    <div class="channel-avatar">
+                        <img src="../img/chpic4.png" alt="Channel Avatar" class="avatar-img">
+                    </div>
+                    <div class="video-details">
+                        <div class="video-title">The History of Video Games</div>
+                        <div class="channel-name">Gaming Vault</div>
+                        <div class="video-stats">2.5M views • 2 weeks ago</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video item 5 -->
+            <div class="video-item">
+                <div class="video-thumbnail" style="background-image: url('../img/pic5.png')">
+                    <span class="video-duration">6:50</span>
+                </div>
+                <div class="video-info">
+                    <div class="channel-avatar">
+                        <img src="../img/chpic5.png" alt="Channel Avatar" class="avatar-img">
+                    </div>
+                    <div class="video-details">
+                        <div class="video-title">Yoga for Beginners - 10 Minute Routine</div>
+                        <div class="channel-name">Fit & Calm</div>
+                        <div class="video-stats">1M views • 3 days ago</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video item 6 -->
+            <div class="video-item">
+                <div class="video-thumbnail" style="background-image: url('../img/pic6.png')">
+                    <span class="video-duration">4:22</span>
+                </div>
+                <div class="video-info">
+                    <div class="channel-avatar">
+                        <img src="../img/chpic6.png" alt="Channel Avatar" class="avatar-img">
+                    </div>
+                    <div class="video-details">
+                        <div class="video-title">How to Draw Realistic Eyes</div>
+                        <div class="channel-name">Art Academy</div>
+                        <div class="video-stats">320K views • 5 days ago</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video item 7 -->
+            <div class="video-item">
+                <div class="video-thumbnail" style="background-image: url('../img/pic7.png')">
+                    <span class="video-duration">9:30</span>
+                </div>
+                <div class="video-info">
+                    <div class="channel-avatar">
+                        <img src="../img/chpic7.png" alt="Channel Avatar" class="avatar-img">
+                    </div>
+                    <div class="video-details">
+                        <div class="video-title">Exploring the Amazon Rainforest</div>
+                        <div class="channel-name">Nature Wonders</div>
+                        <div class="video-stats">2M views • 6 days ago</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video item 8 -->
+            <div class="video-item">
+                <div class="video-thumbnail" style="background-image: url('../img/pic8.png')">
+                    <span class="video-duration">14:55</span>
+                </div>
+                <div class="video-info">
+                    <div class="channel-avatar">
+                        <img src="../img/chpic8.png" alt="Channel Avatar" class="avatar-img">
+                    </div>
+                    <div class="video-details">
+                        <div class="video-title">Mastering the Art of Public Speaking</div>
+                        <div class="channel-name">Speak Easy</div>
+                        <div class="video-stats">1.8M views • 1 week ago</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
