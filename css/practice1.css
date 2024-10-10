@@ -1,0 +1,43 @@
+/* Стилі для таблиці */
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+.schedule-table th,
+.schedule-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.schedule-table th {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: bold;
+}
+
+.schedule-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.gray-bg {
+    background-color: #e0e0e0;
+}
+
+.schedule-table tbody td {
+    font-size: 14px;
+    height: 50px;
+}
+
+/* Стиль для посилання на головну */
+.home-link {
+    color: blue;
+    text-decoration: none;
+}
+
+.home-link:hover {
+    text-decoration: underline;
+}
