@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №6</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000;
+            overflow: hidden;
+        }
+
+        /* Фон-круг */
+        .background {
+            position: absolute; /* Абсолютне позиціонування */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* Точне центровання */
+            width: 400px; /* Зменшений розмір круга */
+            height: 400px;
+            border-radius: 50%; /* Невидимий круг */
+            background: url('https://media.giphy.com/media/3o6EhHXVHD7Dw1XlG8/giphy.gif') no-repeat center center/cover;
+            overflow: hidden;
+        }
+
+
+        /* Lopunny спрайт */
+        .pokemon {
+            position: absolute;
+            width: 80px; /* Розмір Lopunny */
+            height: auto;
+            top: 50%; /* Початкова позиція - центр */
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <!-- Фон -->
+    <div class="background" id="circle">
+        <img class="pokemon" id="pokemon" src="https://img.pokemondb.net/sprites/black-white/anim/shiny/lopunny.gif" alt="Lopunny">
+    </div>
+
+    <script>
+        const pokemon = document.getElementById('pokemon');
+        const circle = document.getElementById('circle');
+        
+        // Початкові параметри
+        let x = circle.offsetWidth / 2 - pokemon.offsetWidth / 2; // Центр по x
+        let y = circle.offsetHeight / 2 - pokemon.offsetHeight / 2; // Центр по y
+        let speedX = (Math.random() > 0.5 ? 1 : -1) * 2; // Випадковий напрямок по x
+        let speedY = (Math.random() > 0.5 ? 1 : -1) * 2; // Випадковий напрямок по y
+        const radius = circle.offsetWidth / 2; // Радіус круга
+        
+        function movePokemon() {
+            x += speedX;
+            y += speedY;
+
+            // Обчислюємо відстань від центру до поточної позиції спрайта
+            const dx = x + pokemon.offsetWidth / 2 - circle.offsetWidth / 2;
+            const dy = y + pokemon.offsetHeight / 2 - circle.offsetHeight / 2;
+            const distance = Math.sqrt(dx * dx + dy * dy);
+
+            // Якщо досягнута межа круга, змінюємо напрямок руху
+            if (distance + pokemon.offsetWidth / 2 >= radius) {
+                // Відбиваємось від стінки
+                const normalX = dx / distance;
+                const normalY = dy / distance;
+                const dotProduct = speedX * normalX + speedY * normalY;
+
+                speedX -= 2 * dotProduct * normalX;
+                speedY -= 2 * dotProduct * normalY;
+            }
+
+            // Оновлюємо позицію спрайта
+            pokemon.style.left = `${x}px`;
+            pokemon.style.top = `${y}px`;
+
+            requestAnimationFrame(movePokemon);
+        }
+
+        movePokemon();
+    </script>
+</body>
+</html>

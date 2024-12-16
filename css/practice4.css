@@ -1,0 +1,139 @@
+<style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #1a1a1a;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .keyboard {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            padding: 20px;
+            background-color: #2a2a2a;
+            border-radius: 15px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .row {
+            display: flex;
+            gap: 8px;
+        }
+
+        .key {
+            height: 45px;
+            min-width: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #333;
+            color: #fff;
+            border-radius: 8px;
+            font-size: 14px;
+            user-select: none;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            padding: 0 12px;
+            box-shadow: 0 2px 0 #222;
+            position: relative;
+        }
+
+        .key:hover {
+            background-color: #444;
+        }
+
+        .key:active {
+            transform: translateY(2px);
+            box-shadow: none;
+        }
+
+        /* Special key sizes */
+        .key-backspace { width: 100px; }
+        .key-tab { width: 80px; }
+        .key-caps { width: 90px; }
+        .key-enter { width: 90px; }
+        .key-shift-left { width: 110px; }
+        .key-shift-right { width: 110px; }
+        .key-ctrl { width: 70px; }
+        .key-alt { width: 70px; }
+        .key-space { width: 350px; }
+        .key-fn { width: 60px; }
+
+        /* Function key row styling */
+        .row-function .key {
+            font-size: 12px;
+            height: 40px;
+            min-width: 40px;
+        }
+
+        /* Number row special characters */
+        .key .secondary {
+            position: absolute;
+            top: 5px;
+            left: 8px;
+            font-size: 10px;
+            opacity: 0.7;
+
+            
+        }
+        .home-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #444;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.home-button:hover {
+    background-color: #555;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.home-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+/* Numpad and Arrow Keys Styling */
+.numpad {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.key-zero {
+    width: 90px;
+}
+
+/* Arrow Keys Styling */
+.row:last-child .key {
+    min-width: 45px;
+    height: 45px;
+}
+
+/* General Style Adjustments */
+.keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+
+    </style>

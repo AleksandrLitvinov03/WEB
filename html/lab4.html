@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №4 - Планер</title>
+    <link rel="stylesheet" href="../css/lab4.css">
+    <!-- Підключення кастомного шрифту -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">WEEKLY PLAN</h1>
+        <div class="header">
+            <div>
+                <label for="week">WEEK OF:</label>
+                <input type="text" id="week" placeholder="Введіть тиждень">
+            </div>
+            <div>
+                <label for="habit">HEALTHY HABIT:</label>
+                <input type="text" id="habit" placeholder="Введіть звичку">
+            </div>
+        </div>
+        <div class="grid">
+            <div class="column to-do">
+                <h3>TOP 3 GOALS</h3>
+                <ul>
+                    <li><input type="checkbox"> <input type="text" placeholder="Завдання 1"></li>
+                    <li><input type="checkbox"> <input type="text" placeholder="Завдання 2"></li>
+                    <li><input type="checkbox"> <input type="text" placeholder="Завдання 3"></li>
+                </ul>
+                <h3>EVERYTHING ELSE</h3>
+                <ul>
+                    <li><input type="checkbox"> <input type="text" placeholder="Завдання 4"></li>
+                    <li><input type="checkbox"> <input type="text" placeholder="Завдання 5"></li>
+                    <li><input type="checkbox"> <input type="text" placeholder="Завдання 6"></li>
+                </ul>
+                <h3>NEXT WEEK</h3>
+                <ul>
+                    <li><input type="checkbox"> <input type="text" placeholder="План 1"></li>
+                    <li><input type="checkbox"> <input type="text" placeholder="План 2"></li>
+                </ul>
+            </div>
+            <div class="column days">
+                <div class="day">
+                    <h3>MONDAY</h3>
+                    <textarea></textarea>
+                </div>
+                <div class="day">
+                    <h3>TUESDAY</h3>
+                    <textarea></textarea>
+                </div>
+                <div class="day">
+                    <h3>WEDNESDAY</h3>
+                    <textarea></textarea>
+                </div>
+                <div class="day">
+                    <h3>THURSDAY</h3>
+                    <textarea></textarea>
+                </div>
+                <div class="day">
+                    <h3>FRIDAY</h3>
+                    <textarea></textarea>
+                </div>
+                <div class="day">
+                    <h3>SATURDAY</h3>
+                    <textarea></textarea>
+                </div>
+                <div class="day">
+                    <h3>SUNDAY</h3>
+                    <textarea></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div>
+                <input type="checkbox" id="rocked">
+                <label for="rocked">ROCKED IT</label>
+            </div>
+            <div>
+                <input type="checkbox" id="improve">
+                <label for="improve">ROOM FOR IMPROVEMENT</label>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
