@@ -1,0 +1,58 @@
+:root {
+  --primary-color: #6a1b9a;
+  --secondary-color: #f9f9f9;
+  --footer-color: #222222;
+  --font-family: "Aptos Display", sans-serif;
+}
+
+.card__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+}
+.card__container {
+  width: 80%;
+  max-width: 600px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+}
+.card__title {
+  font-size: 36px;
+  color: #6a1b9a;
+  margin-bottom: 10px;
+}
+.card__text {
+  font-size: 18px;
+  color: #2d2d2d;
+  margin-bottom: 20px;
+}
+.card__footer {
+  background-color: #222222;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.card__image-wrapper {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.card__image {
+  width: 100%;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body {
+  font-family: "Aptos Display", sans-serif;
+  margin: 0;
+  padding: 0;
+}/*# sourceMappingURL=main.css.map */

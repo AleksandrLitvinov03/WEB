@@ -1,0 +1,41 @@
+// scss/_card.scss
+.card {
+    &__wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: $secondary-color;
+    }
+  
+    &__container {
+      width: 80%;
+      max-width: 600px;
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      text-align: center;
+      padding: 20px;
+    }
+  
+    &__title {
+      font-size: 36px;
+      color: $primary-color;
+      margin-bottom: 10px;
+    }
+  
+    &__text {
+      font-size: 18px;
+      color: darken($secondary-color, 80%);
+      margin-bottom: 20px;
+    }
+  
+    &__footer {
+      background-color: $footer-color;
+      color: white;
+      padding: 10px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+  }

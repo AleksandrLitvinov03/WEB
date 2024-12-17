@@ -1,0 +1,10 @@
+// scss/main.scss
+@import 'variables';
+@import 'card';
+@import 'image';
+
+body {
+  font-family: $font-family;
+  margin: 0;
+  padding: 0;
+}
